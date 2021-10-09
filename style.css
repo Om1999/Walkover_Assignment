@@ -1,36 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
 .navbar{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
 }
 nav{
     flex: 1;
     text-align: right;
 }
-nav ul {
-    display: inline-block;
+nav ul{
     list-style-type: none;
-}
-nav ul li {
     display: inline-block;
-    margin-right: 2rem;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
 }
 a{
     text-decoration: none;
-    color: olivedrab;
+    color: #525188;
 }
-.categories{
-    margin: 70px 0;
+p{
+    color:#525188;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .row{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 40px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+}
+.btn{
+    display: inline-block;
+    background: #ff8712;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #88eeee;
+}
+.header{
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+.header .row{
+    margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
 }
 .col-3{
     flex-basis: 30%;
@@ -38,8 +85,7 @@ a{
     margin-bottom: 30px;
 }
 .col-3 img{
-    width: 40%;
-    height: 55%;
+    width: 100%;
 }
 .small-container{
     max-width: 1080px;
@@ -47,15 +93,45 @@ a{
     padding-left: 25px;
     padding-right: 25px;
 }
-.row2{
-    display: flex;
-}
 .col-4{
     flex-basis: 25%;
-    padding: 5px;
+    padding: 10px;
     min-width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .col-4 img{
-    width: 30%;
+    width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
